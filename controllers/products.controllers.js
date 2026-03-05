@@ -1,10 +1,13 @@
+import { validateStock } from "../utils/validate.js";  
+
+
 const products = [
   { id: 1, name: "Laptop", price: 1200 },
   { id: 2, name: "Mouse", price: 20 },
 ];
 
 
-export const getProducts = (req, res) => {
+export const createProducts = (req, res) => {
     res.json(products);
 };
 
